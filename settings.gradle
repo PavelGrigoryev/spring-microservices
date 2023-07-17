@@ -1,0 +1,5 @@
+rootProject.name = 'spring-microservices'
+include 'eureka-server',
+        'eureka-client',
+        'api-gateway',
+        'github-config-server'

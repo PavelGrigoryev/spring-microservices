@@ -1,0 +1,12 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: github-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: xxx
+          username: xxx
+          password: xxx

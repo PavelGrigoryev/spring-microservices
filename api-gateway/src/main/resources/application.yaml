@@ -1,0 +1,20 @@
+server:
+  port: 8765
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes[0]:
+        id: test
+        uri: lb://eureka-client
+        predicates[0]: Path=/test
+        predicates[1]: Method=GET
+  application:
+    name: api-gateway
