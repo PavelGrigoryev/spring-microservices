@@ -3,3 +3,6 @@ GET http://localhost:8765/test
 
 ###config
 GET http://localhost:8888/eureka-client/default
+
+###actuator
+GET http://localhost:8765/actuator
